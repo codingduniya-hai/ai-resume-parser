@@ -433,13 +433,17 @@ function App() {
 
                     <div>
                       <h2>AI Recommendation</h2>
-
-                      <p>
-                        This candidate has strong technical skills
-                        and relevant experience. They are a good fit
-                        for the role. Consider validating cloud and
-                        DevOps skills during the interview.
-                      </p>
+                      
+                        <p>
+  {analysisData?.score >= 80
+    ? "This candidate is an excellent match for the role. Their skills and experience strongly align with the job requirements."
+    : analysisData?.score >= 60
+    ? "This candidate is a good match for the role. Most important requirements are covered, but some areas should be validated during the interview."
+    : analysisData?.score >= 40
+    ? "This candidate is a moderate match for the role. Several relevant skills are present, but there are important gaps in the job requirements."
+    : "This candidate is a weak match for the role. Significant skills or experience are missing compared with the job requirements."}
+</p>
+                      
                     </div>
 
                   </div>
