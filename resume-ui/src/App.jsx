@@ -34,7 +34,7 @@ function App() {
   formData.append("job_description", jobDescription);
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/analyze", {
+    const response = await fetch("https://ai-resume-parser-40sy.onrender.com/analyze", {
       method: "POST",
       body: formData,
     });
@@ -144,13 +144,13 @@ function App() {
         </header>
 
 
-        {/* WORKSPACE */}
+        
         <section className="workspace">
 
-          {/* LEFT COLUMN */}
+          
           <div className="left-column">
 
-            {/* UPLOAD CARD */}
+            
             <div className="panel">
 
               <div className="panel-title">
@@ -208,7 +208,7 @@ function App() {
             </div>
 
 
-            {/* JOB DESCRIPTION */}
+            
             <div className="panel">
 
               <div className="panel-title">
@@ -229,7 +229,7 @@ function App() {
             </div>
 
 
-            {/* ANALYZE BUTTON */}
+            
             <button
               className="analyze-button"
               onClick={handleAnalyze}
@@ -244,10 +244,10 @@ function App() {
           </div>
 
 
-          {/* RIGHT COLUMN */}
+          
           <div className="results-column">
 
-            {/* MATCH SCORE */}
+            
             <div className="panel results-panel">
 
               <div className="results-header">
@@ -313,10 +313,10 @@ function App() {
                   </div>
 
 
-                  {/* INFORMATION GRID */}
+                  
                   <div className="result-grid">
 
-                    {/* CANDIDATE */}
+                    
                     <div className="result-card">
                       <h2>👤 Candidate Information</h2>
 
@@ -343,7 +343,7 @@ function App() {
                     </div>
 
 
-                    {/* SKILLS */}
+                    
                     <div className="result-card">
                       <h2>💡 Top Skills</h2>
                       <div className="tags">
@@ -359,7 +359,7 @@ function App() {
                     </div>
 
 
-                    {/* MISSING SKILLS */}
+                    
                     <div className="result-card">
                       <h2>⚠️ Missing Skills</h2>
 
@@ -372,7 +372,7 @@ function App() {
                     </div>
 
 
-                    {/* EXPERIENCE */}
+                    
                     <div className="result-card">
                       <h2>💼 Experience</h2>
 
@@ -387,7 +387,7 @@ function App() {
                     </div>
 
 
-                    {/* EDUCATION */}
+                    
                     <div className="result-card">
                       <h2>🎓 Education</h2>
 
@@ -401,7 +401,7 @@ function App() {
                     </div>
 
 
-                    {/* PROJECTS */}
+                
                     <div className="result-card">
                       <h2>🚀 Projects</h2>
 
@@ -424,7 +424,7 @@ function App() {
                   </div>
 
 
-                  {/* AI RECOMMENDATION */}
+                  
                   <div className="recommendation">
 
                     <div className="recommendation-icon">
