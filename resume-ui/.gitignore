@@ -1,0 +1,32 @@
+@"
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+.venv
+venv
+
+# Build
+dist
+dist-ssr
+
+# Environment
+.env
+**/.env
+
+# Temporary resumes
+temp_resumes/
+**/temp_resumes/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+"@ | Set-Content .gitignore
